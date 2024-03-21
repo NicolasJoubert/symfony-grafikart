@@ -1,0 +1,14 @@
+
+
+{% extends 'base.html.twig' %}
+
+{#{% block title %}Toutes les recettes{% endblock %}#}
+{% block title "Recette : " ~ recipe.title %}
+
+{% block body %}
+    <h1>{{ recipe.title }}</h1>
+
+
+    {{ form(form) }}
+
+{% endblock %}
